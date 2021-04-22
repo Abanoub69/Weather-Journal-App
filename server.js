@@ -25,7 +25,7 @@ app.post('/add', (req, res) => {
   projectData.temp = req.body.temp;
   projectData.date = req.body.date;
   projectData.content = req.body.content;
-  res.end();
+  res.send(projectData);
   console.log(projectData);
 });
 // Setup Server
